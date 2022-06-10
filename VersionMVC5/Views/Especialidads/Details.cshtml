@@ -1,0 +1,26 @@
+﻿@model VersionMVC5.Models.Especialidad
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Dellates</h2>
+
+<div>
+    <h4>Especialidad</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Nombre
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom_Especialidad)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id_Especialidad }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

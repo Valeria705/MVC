@@ -1,0 +1,40 @@
+﻿@model VersionMVC5.Models.Oficina
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Esta seguro que quiere eliminar el elemento</h3>
+<div>
+    <h4>Oficina</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom_Oficina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom_Oficina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tel_Oficina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tel_Oficina)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>

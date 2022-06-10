@@ -1,0 +1,50 @@
+﻿@model VersionMVC5.Models.Alumno
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Alumno</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Nombre
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom_Alumno)
+        </dd>
+
+        <dt>
+           Direccion
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dir_Alumno)
+        </dd>
+
+        <dt>
+            Telefono
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tel_Alumno)
+        </dd>
+
+        <dt>
+            Grupo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Grp_Alumno)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id_Alumno }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

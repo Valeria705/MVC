@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ColegioModelStoreContainer" CdmEntityContainer="ColegioEntities1">
+    <EntitySetMapping Name="Alumno">
+      <EntityTypeMapping TypeName="ColegioModel.Alumno">
+        <MappingFragment StoreEntitySet="Alumno">
+          <ScalarProperty Name="Id_Alumno" ColumnName="Id_Alumno" />
+          <ScalarProperty Name="Nom_Alumno" ColumnName="Nom_Alumno" />
+          <ScalarProperty Name="Dir_Alumno" ColumnName="Dir_Alumno" />
+          <ScalarProperty Name="Tel_Alumno" ColumnName="Tel_Alumno" />
+          <ScalarProperty Name="Grp_Alumno" ColumnName="Grp_Alumno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Curso">
+      <EntityTypeMapping TypeName="ColegioModel.Curso">
+        <MappingFragment StoreEntitySet="Curso">
+          <ScalarProperty Name="Id_Curso" ColumnName="Id_Curso" />
+          <ScalarProperty Name="Nom_Curso" ColumnName="Nom_Curso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Docente">
+      <EntityTypeMapping TypeName="ColegioModel.Docente">
+        <MappingFragment StoreEntitySet="Docente">
+          <ScalarProperty Name="ID_Docente" ColumnName="ID_Docente" />
+          <ScalarProperty Name="Nom_Docente" ColumnName="Nom_Docente" />
+          <ScalarProperty Name="Dire_Docente" ColumnName="Dire_Docente" />
+          <ScalarProperty Name="Tel_Docente" ColumnName="Tel_Docente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Especialidad">
+      <EntityTypeMapping TypeName="ColegioModel.Especialidad">
+        <MappingFragment StoreEntitySet="Especialidad">
+          <ScalarProperty Name="Id_Especialidad" ColumnName="Id_Especialidad" />
+          <ScalarProperty Name="Nom_Especialidad" ColumnName="Nom_Especialidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Oficina">
+      <EntityTypeMapping TypeName="ColegioModel.Oficina">
+        <MappingFragment StoreEntitySet="Oficina">
+          <ScalarProperty Name="Id_Oficina" ColumnName="Id_Oficina" />
+          <ScalarProperty Name="Nom_Oficina" ColumnName="Nom_Oficina" />
+          <ScalarProperty Name="Tel_Oficina" ColumnName="Tel_Oficina" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

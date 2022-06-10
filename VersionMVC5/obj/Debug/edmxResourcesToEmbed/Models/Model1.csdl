@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ColegioModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Alumno">
+    <Key>
+      <PropertyRef Name="Id_Alumno" />
+    </Key>
+    <Property Name="Id_Alumno" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Nom_Alumno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dir_Alumno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tel_Alumno" Type="Int64" />
+    <Property Name="Grp_Alumno" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Curso">
+    <Key>
+      <PropertyRef Name="Id_Curso" />
+    </Key>
+    <Property Name="Id_Curso" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Nom_Curso" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Docente">
+    <Key>
+      <PropertyRef Name="ID_Docente" />
+    </Key>
+    <Property Name="ID_Docente" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Nom_Docente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dire_Docente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tel_Docente" Type="Int64" />
+  </EntityType>
+  <EntityType Name="Especialidad">
+    <Key>
+      <PropertyRef Name="Id_Especialidad" />
+    </Key>
+    <Property Name="Id_Especialidad" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Nom_Especialidad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Oficina">
+    <Key>
+      <PropertyRef Name="Id_Oficina" />
+    </Key>
+    <Property Name="Id_Oficina" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Nom_Oficina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tel_Oficina" Type="Int64" />
+  </EntityType>
+  <EntityContainer Name="ColegioEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alumno" EntityType="Self.Alumno" />
+    <EntitySet Name="Curso" EntityType="Self.Curso" />
+    <EntitySet Name="Docente" EntityType="Self.Docente" />
+    <EntitySet Name="Especialidad" EntityType="Self.Especialidad" />
+    <EntitySet Name="Oficina" EntityType="Self.Oficina" />
+  </EntityContainer>
+</Schema>
